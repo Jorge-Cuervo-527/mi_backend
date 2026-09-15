@@ -7,8 +7,8 @@ const getConnection = async () => {
         
     } catch (error) {
         console.log(error);
-
-        throw new Error('Error a la hora de inicializar BD');
+        process.exit(1);
+        //throw new Error('Error a la hora de inicializar BD');
     }
 }
 
